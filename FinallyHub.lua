@@ -8,6 +8,8 @@ local gameswht = {
     [7267631004] = 'carry people simulator 3',
     [8542259458] = 'SkyWars', [8542275097] = 'SkyWars',
     [2990100290] = 'RPG Simulator',
+    [5490351219] = 'Clicker Madness' -- Coming Soon (Today Maybe?!?!)
+    [1240123653] = 'Zombie Attack' -- Takes 2 days.
 }
 
 for z,k in next, gameswht do
