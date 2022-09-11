@@ -10,15 +10,16 @@ local gameswht = {
     [2990100290] = 'RPG Simulator',
 }
 
-if not table.find(gameswht, game.PlaceId) then 
-     b.LocalPlayer:Kick('Wrong Game!')
-end
-
 for z,k in next, gameswht do
     gameswht[z] = table.concat(k:split(' '), '_')
 end
 
 local n = gameswht[game.PlaceId] or gameswht[game.GameId]
+
+if not n then
+     b.LocalPlayer:Kick('Wrong Game!')
+end
+
 return loadstring(game:HttpGet(url.. '/' ..n ..'.lua'))()
 --
 
